@@ -29,8 +29,8 @@ public:
     int GetNoResultRequests() const;
 private:
     struct QueryResult {
-        std::pair<int, int> count_results_;
-        QueryResult(const std::pair<int, int>& count_results);
+        std::pair<int, int> results_;
+        QueryResult(const std::pair<int, int>& results);
     };
     std::deque<QueryResult> requests_;
     const static int min_in_day_ = 1440;
